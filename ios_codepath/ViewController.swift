@@ -9,7 +9,10 @@
 import UIKit
 
 class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageViewControllerDelegate {
-
+    
+    @IBOutlet weak var cancelBarButtonItem: UIBarButtonItem!
+    
+    @IBOutlet weak var classmatesBarButtonItem: UIBarButtonItem!
     
     var pageViewController: UIPageViewController!
     let pageTitles = ["Title 1", "Title 2"]
@@ -20,6 +23,8 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         
+        self.navigationController?.navigationBar.backgroundColor = UIColor(red: 1.0, green: 0.0, blue: 0.0, alpha: 0.5)
+        
         createPageViewController()
         
         
@@ -28,6 +33,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        
     }
     
     func createPageViewController(){

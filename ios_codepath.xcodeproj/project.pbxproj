@@ -34,7 +34,7 @@
 		22B6806B1B6B0FD900963A42 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 22B680691B6B0FD900963A42 /* LaunchScreen.xib */; };
 		22B680771B6B0FDA00963A42 /* ios_codepathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22B680761B6B0FDA00963A42 /* ios_codepathTests.swift */; };
 		22FED8231B769ACD00CE81BD /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22FED8221B769ACD00CE81BD /* LoginViewController.swift */; };
-		3346509DBE8C09C656FDE165 /* libPods-ios_codepath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD36AEAA9D946CA8CB19319 /* libPods-ios_codepath.a */; };
+		3346509DBE8C09C656FDE165 /* libPods-ios_codepath.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AAD36AEAA9D946CA8CB19319 /* libPods-ios_codepath.a */; settings = {ATTRIBUTES = (Required, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -511,11 +511,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ios_codepath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios_codepath/ios_codepath-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -525,10 +528,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ios_codepath/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "ios_codepath/ios_codepath-Bridging-Header.h";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
