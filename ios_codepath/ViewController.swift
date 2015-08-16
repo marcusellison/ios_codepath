@@ -49,7 +49,7 @@ class ViewController: UIViewController, UIPageViewControllerDataSource, UIPageVi
         
         pageViewController = pageController
         addChildViewController(pageViewController!)
-        self.view.addSubview(pageViewController!.view)
+        self.view.insertSubview(pageViewController.view, atIndex: 0)
         pageViewController!.didMoveToParentViewController(self)
         
     }
