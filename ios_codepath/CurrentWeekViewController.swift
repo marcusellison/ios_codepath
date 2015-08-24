@@ -22,7 +22,9 @@ class CurrentWeekViewController: UIViewController {
     @IBOutlet weak var thirdImageView: UIImageView!
     @IBOutlet weak var checkinButton: UIButton!
     @IBOutlet weak var absenceButton: UIButton!
-    var itemIndex: Int = 0
+    var itemIndex: Int?
+    
+    var weekTitleText: String!
     
     
     override func viewDidLoad() {
@@ -30,7 +32,9 @@ class CurrentWeekViewController: UIViewController {
 
         // Do any additional setup after loading the view.
         
+        weekTitleLabel.text  = self.weekTitleText
         classCardImageView.image = UIImage(named:"week1_class_card")
+//        classCardImageView.image = self.firstImage
         firstImageView.image = UIImage(named:"week1_first_image")
         secondImageView.image = UIImage(named:"week1_second_image")
         thirdImageView.image = UIImage(named:"week1_third_image")
